@@ -24,10 +24,7 @@ C'est donc un **travail expérimental et exploratoire** autour des VAE.
 
 Pour un VAE entraîné avec une ELBO $\mathcal{L}[q_\phi]$, on a la décomposition :
 
-$
-\log p_\theta(x) - \mathcal{L}[q_\phi]
-= \underbrace{\log p_\theta(x) - \mathcal{L}[q^*]}_{\text{approximation gap}}
-+ \underbrace{\mathcal{L}[q^*] - \mathcal{L}[q_\phi]}_{\text{amortization gap}}
+$\log p_\theta(x) - \mathcal{L}[q_\phi] = \underbrace{\log p_\theta(x) - \mathcal{L}[q^*]}_{\text{approximation gap}} + \underbrace{\mathcal{L}[q^*] - \mathcal{L}[q_\phi]}_{\text{amortization gap}}$
 $
 
 où :
