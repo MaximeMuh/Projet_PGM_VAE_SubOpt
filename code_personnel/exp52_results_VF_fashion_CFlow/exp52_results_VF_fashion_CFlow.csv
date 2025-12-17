@@ -1,0 +1,10 @@
+model_family,q_star,logp,Lq,Lq_star,approx_gap,amort_gap,infer_gap
+FFG,FFG,-94.42,-101.39,-97.01,2.59,4.38,6.97
+FFG,Flow,-94.42,-101.39,-95.24,0.82,6.15,6.97
+FFG,ContextualFlow,-94.42,-101.39,-95.09,0.67,6.3,6.97
+Flow,FFG,-92.47,-98.61,-94.6,2.13,4.01,6.14
+Flow,Flow,-92.47,-98.61,-94.29,1.82,4.32,6.14
+Flow,ContextualFlow,-92.47,-98.61,-94.17,1.7,4.44,6.14
+ContextualFlow,FFG,-91.31,-98.15,-97.23,5.91,0.92,6.83
+ContextualFlow,Flow,-91.31,-98.15,-92.57,1.25,5.58,6.83
+ContextualFlow,ContextualFlow,-91.31,-98.15,-92.29,0.98,5.86,6.83
