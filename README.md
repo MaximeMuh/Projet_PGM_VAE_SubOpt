@@ -24,10 +24,9 @@ C'est donc un **travail expérimental et exploratoire** autour des VAE.
 
 Pour un VAE entraîné avec une ELBO $\mathcal{L}[q_\phi]$, on a la décomposition :
 
-$\log p_{\theta}(x) - \mathcal{L}[q_{\phi}] = (\log p_{\theta}(x) - \mathcal{L}[q^{*}]) + (\mathcal{L}[q^{*}] - \mathcal{L}[q_{\phi}])$
-
-- **Approximation gap** : $\log p_{\theta}(x) - \mathcal{L}[q^{*}]$
-- **Amortization gap** : $\mathcal{L}[q^{*}] - \mathcal{L}[q_{\phi}]$
+<div align="center" style="background-color: #0d1117; padding: 10px;">
+<img src="https://latex.codecogs.com/svg.latex?\color{white}\large&space;\log&space;p_{\theta}(x)&space;-&space;\mathcal{L}[q_{\phi}]&space;=&space;\underbrace{(\log&space;p_{\theta}(x)&space;-&space;\mathcal{L}[q^{*}])}_{\text{approximation&space;gap}}&space;+&space;\underbrace{(\mathcal{L}[q^{*}]&space;-&space;\mathcal{L}[q_{\phi}])}_{\text{amortization&space;gap}}" title="Decomposition ELBO en blanc" />
+</div>
 
 où :
 - $q^*(z|x)$ est le meilleur posterior possible (optimisé localement pour chaque $x$),
