@@ -24,11 +24,11 @@ C'est donc un **travail expérimental et exploratoire** autour des VAE.
 
 Pour un VAE entraîné avec une ELBO $\mathcal{L}[q_\phi]$, on a la décomposition :
 
-$$
+$
 \log p_\theta(x) - \mathcal{L}[q_\phi]
 = \underbrace{\log p_\theta(x) - \mathcal{L}[q^*]}_{\text{approximation gap}}
 + \underbrace{\mathcal{L}[q^*] - \mathcal{L}[q_\phi]}_{\text{amortization gap}}
-$$
+$
 
 où :
 - $q^*(z|x)$ est le meilleur posterior possible (optimisé localement pour chaque $x$),
@@ -60,14 +60,14 @@ Résultat principal : le **gap d’amortization domine**, mais les flows réduis
 Le **Contextual Flow** est une extension des normalizing flows standards.
 
 Dans un flow classique, on a :
-$$
+$
 z = f_\lambda(z_0)
-$$
+$
 
 Dans un contextual flow, les paramètres du flow dépendent explicitement de l’entrée :
-$$
+$
 z = f_{\lambda(x)}(z_0)
-$$
+$
 
 Autrement dit, l’encodeur ne prédit pas seulement les paramètres d’une gaussienne, mais aussi les paramètres des transformations du flow.
 
